@@ -7,6 +7,7 @@ export const sendNotifications = async (req, res) => {
     if (!req.body) {
       return res.send("Invalid Request");
     }
+    req.body.to = 'all';
     const newNotification = new notificationModel.create(req.body);
     // Here we can emit 
     // io.emit('notification:new', newNotification);

@@ -9,6 +9,10 @@ const notificationSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  isRead: Boolean,
+  to: {
+    type: String,
+  },
   Timestamp: Date.now
 });
 
