@@ -1,0 +1,5 @@
+- There we can get the vehicle by sorting in descending order by Impact
+- then with the help of loop on each mechainic we can check for the hours needed to repair that vehicle
+- Also we can subtract the time from Mechanic's hour
+- If the hours is vehicle repiar hours are greater than Mechanic Hour and mechanic hour is still not 0 then we can Hash The Mechanic then if the lower or equal hours needed repair time vehicle comes we can get the mechanic from there and delete it from Hash.
+- through this we can easily manage these things
