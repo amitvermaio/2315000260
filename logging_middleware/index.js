@@ -1,9 +1,12 @@
 import fs from 'fs';
+
 export function Log(stack, level, packageName, message) {
-  const log = `Error Stack: ${stack}, Level: ${level}, Package: ${packageName}, Message: ${message}`;
+  const log = `{ Error Stack: ${stack.toLowerCase()}, Level: ${level.toLowerCase}, Package: ${packageName.toLowerCase()}, Message: ${message} }`;
   console.log(log);
-  const randomFileName = Date.now();
-  fs.writeFileSync(`./${randomFileName}.log`, log);
+
+  // we can create log file for these as well
+  // const randomFileName = message ? message + "_" + Date.now() : Date.now();
+  // fs.writeFileSync(`./${randomFileName}.log`, log);
 }
 
-Log("backend", "ad", "ad", "ad")
+Log('asd','ad','Ad','ad')
